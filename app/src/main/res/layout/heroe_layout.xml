@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             android:id="@+id/heroe__container"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="wrap_content"
+                                             android:background="@android:color/holo_green_dark"
+>
+    <TextView android:id="@+id/heroe__tv__name"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:padding="6dp"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent"
+              android:textSize="20sp"
+              tools:text="Rocio Jurado"
+    />
+
+    <TextView android:id="@+id/heroe__tv__type"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              app:layout_constraintStart_toStartOf="@id/heroe__tv__name"
+              app:layout_constraintTop_toBottomOf="@id/heroe__tv__name"
+              android:textSize="14sp"
+              android:text="Tipo: "
+              android:textStyle="bold"
+              android:padding="6dp"
+              tools:text="niños, no useis strings hardcodeados aqui"
+    />
+
+    <TextView android:id="@+id/god__tv__type"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="14sp"
+              android:padding="6dp"
+              app:layout_constraintStart_toEndOf="@id/heroe__tv__type"
+              app:layout_constraintTop_toTopOf="@id/heroe__tv__type"
+              tools:text="coooomooo una olaaaaa"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

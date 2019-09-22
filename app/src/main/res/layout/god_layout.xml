@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/god__container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_light">
+
+    <TextView
+            android:id="@+id/god__tv__name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Rocio Jurado" />
+
+    <TextView
+            android:id="@+id/god__tv__description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:text="Descripcion: "
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/god__tv__name"
+            app:layout_constraintTop_toBottomOf="@id/god__tv__name"
+            tools:text="niños, no useis strings hardcodeados aqui" />
+
+    <TextView
+            android:id="@+id/god__tv__type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@id/god__tv__description"
+            app:layout_constraintTop_toBottomOf="@id/god__tv__name"
+            tools:text="coooomooo una olaaaaa" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
